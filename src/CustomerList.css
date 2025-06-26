@@ -1,0 +1,177 @@
+/* General background */
+body, .min-vh-100 {
+  background: #f5f5f5 !important;
+}
+
+/* Card and list backgrounds */
+.customer-card, .list-group-item {
+  background: #fff !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+/* Buttons */
+.btn, .btn:focus, .btn:active {
+  background: #e0e0e0 !important;
+  color: #343a40 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background 0.2s;
+}
+
+.btn-outline-primary, .btn-outline-secondary {
+  background: #fff !important;
+  color: #343a40 !important;
+  border: 1px solid #adb5bd !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-secondary:hover {
+  background: #adb5bd !important;
+  color: #fff !important;
+}
+
+.btn-success {
+  background: #adb5bd !important;
+  color: #fff !important;
+  border: none !important;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background: #6c757d !important;
+  color: #fff !important;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(173,181,189,0.12);
+}
+
+.customer-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+}
+
+.customer-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  font-size: 0.95rem;
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+  background: #adb5bd !important;
+  color: #fff !important;
+}
+
+.bg-secondary {
+  background-color: #adb5bd !important;
+  color: #fff !important;
+}
+
+.bg-success {
+  background-color: #6c757d !important;
+  color: #fff !important;
+}
+
+.footer-logo {
+  width: 600px;
+  opacity: 0.7;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.custom-header {
+  background: #e4dbdb !important; /* or any light gray you prefer */
+}
+
+.underline-home {
+  text-decoration: underline !important;
+  text-underline-offset: 10px;
+}
+
+/* Settings (cog) button animation */
+.settings-btn {
+  transition: transform 1s cubic-bezier(.4,2,.6,1), color 0.2s;
+}
+
+.settings-btn:hover, .settings-btn:focus {
+  transform: rotate(360deg) scale(1.15);
+  color: #6c757d !important;
+}
+
+/* Underline animation for header nav links */
+nav .header-link {
+  position: relative;
+  transition: color 0.2s;
+}
+
+nav .header-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #343a40;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+  transform-origin: left;
+}
+
+nav .header-link:hover::after,
+nav .header-link.active::after {
+  transform: scaleX(1);
+}
+
+.modal-backdrop-custom {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-custom {
+  background: #fff;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 1.5rem; /* Add padding for gap from corners */
+  overflow: hidden;
+}
+
+.modal-header-custom {
+  padding: 0 0 1rem 0; /* Remove side padding, handled by .modal-custom */
+  border-bottom: 1px solid #ffffff;
+  background: #ffffff;
+  text-align: center; /* Center the title */
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center; /* Center the title text */
+}
+
+.modal-body {
+  padding: 1.2rem 0; /* Remove side padding, handled by .modal-custom */
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.modal-footer-custom {
+  padding: 0.01rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  border-top: 1px solid #ffffff;
+  background: #ffffff;
+}
