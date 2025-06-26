@@ -13,7 +13,7 @@ function CustomerForm() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    fetch('http://localhost:8081/customers', {
+    fetch('http://appbackend-production-a266.up.railway.app/customers', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form)

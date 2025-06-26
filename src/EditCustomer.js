@@ -10,7 +10,7 @@ function EditCustomer({ setCustomerName }) {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:8081/customers/${id}`)
+    fetch(`http://appbackend-production-a266.up.railway.app/customers/${id}`)
       .then(res => res.json())
       .then(data => {
         // Ensure all fields are present

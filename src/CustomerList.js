@@ -6,7 +6,7 @@ function CustomerList() {
   const [customers, setCustomers] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8081/customers')
+    fetch('http://appbackend-production-a266.up.railway.app/customers')
       .then(res => res.json())
       .then(data => setCustomers(data));
   }, []);

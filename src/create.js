@@ -10,7 +10,7 @@ function Create() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newEntry = { name, phone, email };
-        fetch('http://localhost:8081/create', {
+        fetch('http://appbackend-production-a266.up.railway.app/create', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

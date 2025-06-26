@@ -7,7 +7,7 @@ function Login({ onLogin }) {
 
   const handleSubmit = e => {
     e.preventDefault();
-    fetch('http://localhost:8081/login', {
+    fetch('http://appbackend-production-a266.up.railway.app/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password })
